@@ -1,5 +1,10 @@
 # logstash-forwarder
 
+# TURBOSQUID FORK
+
+* Adds `tls host` config keyword so we are not bound by remote server name
+* Source reorganized to build with `gb`
+
 # THIS PROJECT IS REPLACED BY [FILEBEAT](https://github.com/elastic/beats/tree/master/filebeat)
 
 The [filebeat](https://github.com/elastic/beats/tree/master/filebeat) project replaces logstash-forwarder. Please use that instead.
