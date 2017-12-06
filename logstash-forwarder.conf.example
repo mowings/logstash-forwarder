@@ -14,6 +14,8 @@
     # The path to your trusted ssl CA file. This is used
     # to authenticate your downstream server.
     #"ssl ca": "./logstash-forwarder.crt",
+    # Optional TLS hostname to set. Otherwise taked from server in use, which is dumb
+    #"tls host": "foo.bar.com",
 
     # Network timeout in seconds. This is most important for
     # logstash-forwarder determining whether to stop waiting for an
