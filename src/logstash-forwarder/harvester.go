@@ -58,6 +58,10 @@ func (h *Harvester) Harvest(output chan *FileEvent) {
 				// Check to see if the file was truncated
 				info, _ := h.file.Stat()
 				if info.Size() < h.Offset {
+					if h.Path == "-" {
+						emit("stdin closed. Will exit.")
+						os.Exit(0)
+					}
 					emit("File truncated, seeking to beginning: %s\n", h.Path)
 					h.file.Seek(0, os.SEEK_SET)
 					h.Offset = 0
