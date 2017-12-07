@@ -4,6 +4,7 @@
 
 * Adds `tls host` config keyword so we are not bound by remote server name
 * Source reorganized to build with `gb`
+* When reading from stdin, logstash-forwarder will exit on stdin close
 
 # THIS PROJECT IS REPLACED BY [FILEBEAT](https://github.com/elastic/beats/tree/master/filebeat)
 
